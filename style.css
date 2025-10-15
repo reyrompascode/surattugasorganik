@@ -184,8 +184,8 @@ th button {
 .form-table th:nth-child(5),
 .form-table td:nth-child(5) {
   /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
-  width: 90px;
-  min-width: 90px;
+  width: 110px;
+  min-width: 110px;
   /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
   overflow: hidden;
 }
@@ -195,4 +195,5 @@ th button {
   width: 100%;
   box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
 }
+
 
