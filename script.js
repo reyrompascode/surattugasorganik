@@ -199,7 +199,26 @@ function generateSuratTugas(doc, data) {
   doc.text("Kota Jakarta Barat", rightCenter, ttdY, { align: "center" });
   ttdY += 25;
   doc.setFont("times", "bold");
-  doc.text("Muhammad Noval SST, M.E.", rightCenter, ttdY, { align: "center" });
+
+  const nameText = "Muhammad Noval SST, M.E."; // Simpan teks dalam variabel
+  doc.text(nameText, rightCenter, ttdY, { align: "center" });
+
+  // --- LOGIKA MENAMBAH GARIS BAWAH ---
+  // 1. Hitung lebar teks
+  const nameWidth = (doc.getStringUnitWidth(nameText) * doc.getFontSize()) / doc.internal.scaleFactor;
+
+  // 2. Hitung posisi X awal dan akhir (karena teks di tengah)
+  const nameStartX = rightCenter - nameWidth / 2;
+  const nameEndX = rightCenter + nameWidth / 2;
+
+  // 3. Tentukan posisi Y garis bawah (sedikit di bawah teks)
+  const nameUnderlineY = ttdY + 0.6;
+
+  // 4. Gambar garis
+  doc.setLineWidth(0.5); // Ketebalan garis 0.5 mm
+  doc.line(nameStartX, nameUnderlineY, nameEndX, nameUnderlineY);
+  // ------------------------------------
+
   ttdY += 5;
   doc.setFont("times", "normal");
   doc.text("NIP. 198007182002121003", rightCenter, ttdY, { align: "center" });
@@ -714,5 +733,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
 
 
