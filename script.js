@@ -80,7 +80,7 @@ function generateSuratTugas(doc, data) {
 
   doc.setFontSize(11);
   doc.setFont("times", "normal");
-  doc.text(`NOMOR: ${data.nomorSuratTugas}`, 105, y, { align: "center" });
+  doc.text(`NOMOR : ${data.nomorSuratTugas}`, 105, y, { align: "center" });
   y += 15;
 
   const marginLeft = 20;
@@ -714,4 +714,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
 
