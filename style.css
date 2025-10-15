@@ -1,0 +1,182 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #000;
+}
+
+/* Tabel input */
+.form-table-wrapper {
+  margin-top: 20px;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table th,
+.form-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  vertical-align: center;
+}
+
+.form-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Input */
+.form-table input[type="text"],
+.form-table input[type="date"] {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-table .button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.reset-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+/* Tombol bawah */
+.button-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#add-row-button,
+#reset-all-button,
+#export-pdf-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+#add-row-button {
+  background-color: #28a745;
+}
+
+#add-row-button:hover {
+  background-color: #218838;
+}
+
+#reset-all-button {
+  background-color: #dc3545;
+}
+
+#reset-all-button:hover {
+  background-color: #c82333;
+}
+
+#export-pdf-button {
+  background-color: #007bff;
+}
+
+#export-pdf-button:hover {
+  background-color: #0056b3;
+}
+
+th button {
+  display: block; /* tombol jadi satu baris sendiri */
+  margin: 5px auto 0; /* otomatis rata tengah + jarak atas */
+}
+/* Styling untuk label Mulai dan Selesai pada kolom Tanggal Kegiatan */
+.date-label {
+  /* Membuat ukuran font lebih kecil */
+  font-size: 0.75em; /* Atau sesuaikan dengan kebutuhan Anda, 75% dari ukuran normal */
+
+  /* Membuat huruf tebal */
+  font-weight: bold;
+
+  /* Mengubah warna agar lebih menarik, misalnya abu-abu gelap */
+  color: #555;
+
+  /* Mengubah display agar label dan input bisa diatur lebih rapi jika diperlukan */
+  display: inline-block;
+  min-width: 45px; /* Memberikan sedikit lebar minimum agar sejajar */
+}
+
+/* Optional: Membuat input tanggal juga sedikit lebih kecil agar serasi */
+.tanggal-kegiatan-mulai,
+.tanggal-kegiatan-selesai {
+  font-size: 0.9em;
+  padding: 2px;
+  text-align: center;
+}
+
+/* Perbaikan untuk label di dalam tabel agar lebih rapi */
+#pegawai-list-body label {
+  margin-right: 5px; /* Memberi sedikit jarak antara label dan input */
+}
+/* Styling untuk label Mulai dan Selesai pada kolom Tanggal Kegiatan */
+.form-table td .date-label {
+  /* Membuat ukuran font lebih kecil (80% dari ukuran normal) */
+  font-size: 0.8em;
+
+  /* Membuat huruf tebal */
+  font-weight: bold;
+
+  /* Memberikan warna yang menarik (sesuai tema BPS) */
+  color: #000000; /* Biru */
+
+  /* Mengatur jarak agar label dan input sejajar rapi */
+  display: inline-block;
+  min-width: 50px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+/* Optional: Membuat input tanggal terlihat serasi */
+.form-table input[type="date"].tanggal-kegiatan-mulai,
+.form-table input[type="date"].tanggal-kegiatan-selesai {
+  width: calc(
+    100% - 65px
+  ); /* Sesuaikan lebar input agar ada ruang untuk label */
+  display: inline-block;
+}
+
+.form-table td:nth-child(4) {
+  vertical-align: middle;
+}

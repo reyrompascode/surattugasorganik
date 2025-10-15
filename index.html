@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator Surat Tugas Organik BPS Kota Jakarta Barat</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="form-container">
+      <h1>Form Surat Tugas Organik BPS Kota Jakarta Barat</h1>
+      <p>Silakan isi data Surat Tugas pada baris yang tersedia. Setiap baris mewakili satu Surat Tugas.</p>
+
+      <div class="form-table-wrapper">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>
+                Nomor Surat
+                <br />
+                <button type="button" id="copy-no-surat-btn">Copy</button>
+              </th>
+              <th>
+                Tanggal Surat
+                <br />
+                <button type="button" id="copy-tgl-surat-btn">Copy</button>
+              </th>
+              <th>
+                Nama Kegiatan
+                <br />
+                <button type="button" id="copy-nama-kegiatan-btn">Copy</button>
+              </th>
+              <th>
+                Tanggal Kegiatan
+                <br />
+                <small>(Mulai & Selesai)</small>
+                <button type="button" id="copy-tgl-kegiatan-btn">Copy</button>
+              </th>
+              <th>
+                Nama Pegawai
+                <br />
+              </th>
+              <th>
+                Kegiatan Lapangan
+                <button type="button" id="copy-jabatan-mitra-btn">Copy</button>
+              </th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="pegawai-list-body"></tbody>
+        </table>
+      </div>
+
+      <div class="button-controls">
+        <button type="button" id="reset-all-button">Reset Semua</button>
+        <button type="button" id="export-pdf-button">Ekspor Semua</button>
+        <button type="button" id="add-row-button">+ Tambah Baris</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
