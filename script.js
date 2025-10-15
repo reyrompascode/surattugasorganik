@@ -166,7 +166,7 @@ function generateSuratTugas(doc, data) {
   doc.setFont("times", "normal");
   doc.text("Jabatan", labelX, y);
   doc.text(":", separatorX, y);
-  const jabatanP = toTitleCase(data.jabatan);
+  const jabatanP = `${toTitleCase(data.jabatan)} BPS Kota Jakarta Barat`;
   const jabatanPText = doc.splitTextToSize(jabatanP, maxWidthBody);
   doc.text(jabatanPText, valueX, y, {
     maxWidth: maxWidthBody,
@@ -714,3 +714,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
