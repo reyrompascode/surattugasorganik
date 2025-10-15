@@ -180,3 +180,19 @@ th button {
 .form-table td:nth-child(4) {
   vertical-align: middle;
 }
+/* Mengatur lebar kolom Nama Pegawai (Kolom ke-5) */
+.form-table th:nth-child(5),
+.form-table td:nth-child(5) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 90px;
+  min-width: 90px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+
+/* Memastikan elemen SELECT di dalam kolom Nama Pegawai mengikuti lebar kolom */
+.form-table td:nth-child(5) .nama-pegawai-select {
+  width: 100%;
+  box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+
