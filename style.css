@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   background: #fff;
   padding: 20px;
@@ -223,3 +223,4 @@ th button {
   /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
   overflow: hidden;
 }
+
