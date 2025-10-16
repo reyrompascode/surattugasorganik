@@ -108,7 +108,7 @@ function generateSuratTugas(doc, data) {
 
   const marginLeft = 20;
   const marginBody = 45;
-  const maxWidthBody = 145;
+  const maxWidthBody = 138;
 
   // Menimbang
   doc.setFont("times", "normal");
@@ -880,3 +880,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
