@@ -196,4 +196,30 @@ th button {
   box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
 }
 
+/* Mengatur lebar kolom Nama Pegawai (Kolom ke-5) */
+.form-table th:nth-child(1),
+.form-table td:nth-child(1) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 130px;
+  min-width: 130px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
 
+/* Mengatur lebar kolom Nama Pegawai (Kolom ke-5) */
+.form-table th:nth-child(7),
+.form-table td:nth-child(7) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 120px;
+  min-width: 120px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(6),
+.form-table td:nth-child(6) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 185px;
+  min-width: 185px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
