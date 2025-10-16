@@ -700,7 +700,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           if (tempatInput) {
             // Karena defaultTempat sudah dihapus, kita tentukan langsung nilainya
             if (rowIndex === 0) {
-              tempatInput.value = "Jakarta Barat";
+              tempatInput.value = "Kota Jakarta Barat";
             } else {
               tempatInput.value = "";
             }
@@ -880,5 +880,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
 
 
